@@ -1,0 +1,32 @@
+{
+  "name": "vue2-library-test",
+  "version": "1.0.1",
+  "main": "./dist/vue2-library.umd.js",
+  "module": "./dist/vue2-library.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue2-library.es.js",
+      "require": "./dist/vue2-library.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vue": "^2.7.16",
+    "vue-template-compiler": "^2.7.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue2": "^2.3.3",
+    "vite": "^6.2.1"
+  }
+}
